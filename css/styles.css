@@ -22,7 +22,6 @@ html {
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --wite-color: #ffffff;
-  /* --buttons-color: #f5f4fa; */
   --contacts-rgba: rgba(255, 255, 255, 0.6);
 }
 body {
@@ -198,12 +197,12 @@ ul img {
   color: var(--secondary-text-color);
 }
 
-.adantage-list p {
+.advantage-list p {
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
-.adantage-list .cards-items {
+.advantage-list .cards-items {
   font-size: 14px;
   line-height: 1.71;
 }
@@ -261,9 +260,7 @@ ul img {
   line-height: 1.7;
   margin-top: 9px;
 }
-/* .line {
-  border: 1px solid #ececec;
-} */
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -300,22 +297,55 @@ header > .container {
   margin-right: 93px;
 }
 
-.adventages {
+.advantages {
   padding-top: 94px;
 }
 
-.adantage-list {
+.advantage-list {
   display: flex;
   padding: 0px;
 }
 
-.adantage-list > li {
+.advantage-list > li {
   width: calc((100% - 90px) / 4);
   margin-left: 30px;
 }
-.adantage-list > li:first-child {
+.advantage-list > li:first-child {
   margin-left: 0px;
 }
+
+.advantage-list > li::before {
+  display: block;
+  content: "";
+  height: 120px;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url("../images/antenna.svg");
+  background-size: 70px;
+}
+
+.icon-clock::before {
+  background-image: url("../images/clock.svg");
+  background-size: 70px;
+}
+
+.icon-diagram::before {
+  background-image: url("../images/diagram.svg");
+  background-size: 70px;
+}
+
+.icon-astronaut::before {
+  background-image: url("../images/astronaut.svg");
+  background-size: 70px;
+}
+
 .flex-list {
   display: flex;
   padding: 0px;
